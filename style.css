@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: Roboto, sans-serif;
+    color: #ffffff;
+    background-color: #030303;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titlecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.goobercontainer, .infocontainer {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 10px;
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.goobercontent {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.vro, .mark 
+{
+    border-radius: 20px;
+}
+
+.twitterlink {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 191, 255);
+    font-size: 1.3rem;
+}
+
+.twittercontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;     
+    gap: 10px;
+    background-color: white;
+    width: 13rem;
+    padding: 10px;
+    border-radius: 15px;
+    border-bottom: 6px solid;
+    border-color: rgb(182, 184, 186);
+    margin: 5px;
+    transition: ease;
+}
+
+.twittercontainer:active {
+    border-bottom: 4px solid;
+    border-color: rgb(104, 105, 107);
+}
+
+.twittercontainer:hover {
+    opacity: 0.8;
+}
+
+.twitterIcon {
+    width: 32px;
+}
+
+.gooberTitle, .infoTitle {
+    font-size: 2rem;
+    font-weight: bold;
+   
+}
+
+.infoTitle {
+    color:rgb(255, 111, 0);
+    font-family: "Protest Guerrilla", sans-serif;
+}
+.subGraph {
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.maintext {
+    text-align: center;
+    width: 25vw;
+    margin-bottom: 20px;
+}
+
+.socialscontainer {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.socialsLinks {
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: -20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    color: #373737;
+}
