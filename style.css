@@ -63,19 +63,19 @@ body {
     align-items: center;
     justify-content: center;     
     gap: 10px;
-    background-color: white;
+    background-color: rgb(36, 36, 36);
     width: 13rem;
     padding: 10px;
     border-radius: 15px;
     border-bottom: 6px solid;
-    border-color: rgb(182, 184, 186);
+    border-color: rgb(44, 44, 44);
     margin: 5px;
     transition: ease;
 }
 
 .twittercontainer:active {
     border-bottom: 4px solid;
-    border-color: rgb(104, 105, 107);
+    border-color: rgb(44, 44, 44);
 }
 
 .twittercontainer:hover {
