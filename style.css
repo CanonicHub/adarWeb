@@ -30,7 +30,7 @@ body {
 .goobercontainer, .infocontainer {
     background-color: rgba(255, 255, 255, 0.09);
     border-radius: 10px;
-    width: 33vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,8 +45,7 @@ body {
     gap: 3rem;
 }
 
-.vro, .mark 
-{
+.vro, .mark {
     border-radius: 20px;
 }
 
@@ -89,13 +88,13 @@ body {
 .gooberTitle, .infoTitle {
     font-size: 2rem;
     font-weight: bold;
-   
 }
 
 .infoTitle {
-    color:rgb(255, 111, 0);
+    color: rgb(255, 111, 0);
     font-family: "Protest Guerrilla", sans-serif;
 }
+
 .subGraph {
     margin: 30px;
     font-weight: bolder;
@@ -108,16 +107,16 @@ body {
 }
 
 .socialscontainer {
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .socialsLinks {
     display: flex;
     flex-direction: row;
-    gap:10px;
+    gap: 10px;
 }
 
 footer {
@@ -130,3 +129,43 @@ footer {
     align-items: end;
     color: #373737;
 }
+
+/* Media query for small mobile phones */
+@media (max-width: 300px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+}
+
+/* Media query for larger mobile phones */
+@media (max-width: 600px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+    .maintext {
+        width: 80vw;
+    }
+}
+
+/* Media query for tablets */
+@media (max-width: 900px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+    .maintext {
+        width: 60vw;
+    }
+}
+
+/* Media query for small desktops */
+@media (max-width: 1200px) {
+    .mainContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .maintext {
+        width: 40vw;
+    }
+}
+
+
