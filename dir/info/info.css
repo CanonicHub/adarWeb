@@ -1,67 +1,97 @@
-
 @font-face {
     font-family: 'FNF';
-    src:url('./assets/fonts/FNF.ttf') format('truetype');
-    }
-    
-    @font-face {
+    src: url('./assets/fonts/FNF.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'pixel';
-    src:url('./assets/fonts/pixelfont.otf') format('opentype');
-    }
+    src: url('./assets/fonts/pixelfont.otf') format('opentype');
+}
 
-    body {
-        text-align: center;
-        margin-top: 5%;
-        margin-bottom: 0%;
-        background-color: black; /* Set background to black */
-        color: white; /* Make text white for contrast */
-    }
-    #timer {
-        font-size: 3em;
-        font-family: 'FNF';
-    }
+body {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+    background-color: black; /* Set background to black */
+    color: white; /* Make text white for contrast */
+}
 
-    h1 {
-        color: orange;
-        font-family: 'FNF';
-    }
+#timer {
+    font-size: 3em;
+    font-family: 'FNF';
+    margin: 2rem 0;
+}
 
-    h2 {
+h1 {
+    color: orange;
+    font-family: 'FNF';
+    margin: 2rem 0;
+}
 
-        color: white;
-        font-family: 'pixel';
-        font-size: 150px;
-    }
+h2 {
+    color: white;
+    font-family: 'pixel';
+    font-size: 150px;
+    margin: 2rem 0;
+}
 
-    p {
-        color: gray;
-        font-size: 10px;
-        font-family: 'FNF';
-        margin-bottom: 25%;
-    }
+p {
+    color: gray;
+    font-size: 1rem;
+    font-family: 'FNF';
+    margin: 1rem 0;
+}
 
-    p2 { 
-        color: white;
-        font-size: 15px;
-        font-family: 'FNF';
-    }
+.creditText {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'FNF';
+    margin: 1rem 0;
+}
 
-    p3 { 
-        color: white;
-        font-size: 15px;
-        font-family: 'FNF';
-    }
+p3 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'FNF';
+    margin: 1rem 0;
+}
 
-    p3 a {
-        color: orange;
-        text-decoration: none
-        
-    }
+p3 a {
+    color: orange;
+    text-decoration: none;
+}
 
-    p3 a:hover {
-        color: white;
-    }
+p3 a:hover {
+    color: white;
+}
 
-    .proudness {
-        margin-bottom: 20rem;
-    }
+.stupid {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+a img {
+    margin: 1rem 0;
+}
+
+.exit {
+    display: block;
+    margin: 2rem auto;
+}
+
+.adar-day {
+    display: block;
+    margin: 2rem auto;
+}
+
+.adarthing {
+    display: block;
+    margin: 2rem auto;
+}

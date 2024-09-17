@@ -8,6 +8,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+    background-image: url("./assets/grid.png"); /* Add grid image with higher opacity */
+    background-size: 100px 100px, cover; /* Adjust grid size */
+  
+    animation: moveGrid 20s linear infinite; /* Apply slower animation */
+}
+
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%; /* Move diagonally */
+    }
 }
 
 .titlecontainer {
@@ -15,8 +29,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .mainContainer {
@@ -25,6 +39,7 @@ body {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    padding: 20px;
 }
 
 .goobercontainer, .infocontainer {
@@ -35,7 +50,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .goobercontent {
@@ -90,9 +105,14 @@ body {
     font-weight: bold;
 }
 
+.gooberTitle {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
 .infoTitle {
-    color: rgb(255, 111, 0);
-    font-family: "Protest Guerrilla", sans-serif;
+    color: rgb(185, 80, 0);
+    font-family: "Roboto", sans-serif;
 }
 
 .subGraph {
@@ -104,6 +124,17 @@ body {
     text-align: center;
     width: 25vw;
     margin-bottom: 20px;
+}
+
+.directory-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.directory-links a {
+    display: block;
+    margin: 10px 0;
 }
 
 .socialscontainer {
@@ -122,12 +153,12 @@ body {
 footer {
     position: fixed;
     bottom: 0;
-    left: -20px;
+    left: -30px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: end;
-    color: #373737;
+    justify-content: end;
+    color: white;
+    padding: 10px 0;
 }
 
 /* Media query for small mobile phones */
@@ -135,6 +166,10 @@ footer {
     .mainContainer {
         flex-direction: column;
     }
+}
+
+.maintext p {
+    margin-bottom: 10px;
 }
 
 /* Media query for larger mobile phones */
@@ -172,8 +207,8 @@ a {
     text-decoration: none;
     color: #dc8700;
     font-weight: bold;
-    
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -181,6 +216,5 @@ ul {
 }
 
 li {
-    list-style:none;
+    list-style: none;
 }
-
