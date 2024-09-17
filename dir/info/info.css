@@ -1,4 +1,67 @@
+
 @font-face {
     font-family: 'FNF';
-    src:url(FNF.ttf);
-}
+    src:url('./assets/fonts/FNF.ttf') format('truetype');
+    }
+    
+    @font-face {
+    font-family: 'pixel';
+    src:url('./assets/fonts/pixelfont.otf') format('opentype');
+    }
+
+    body {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 0%;
+        background-color: black; /* Set background to black */
+        color: white; /* Make text white for contrast */
+    }
+    #timer {
+        font-size: 3em;
+        font-family: 'FNF';
+    }
+
+    h1 {
+        color: orange;
+        font-family: 'FNF';
+    }
+
+    h2 {
+
+        color: white;
+        font-family: 'pixel';
+        font-size: 150px;
+    }
+
+    p {
+        color: gray;
+        font-size: 10px;
+        font-family: 'FNF';
+        margin-bottom: 25%;
+    }
+
+    p2 { 
+        color: white;
+        font-size: 15px;
+        font-family: 'FNF';
+    }
+
+    p3 { 
+        color: white;
+        font-size: 15px;
+        font-family: 'FNF';
+    }
+
+    p3 a {
+        color: orange;
+        text-decoration: none
+        
+    }
+
+    p3 a:hover {
+        color: white;
+    }
+
+    .proudness {
+        margin-bottom: 20rem;
+    }
