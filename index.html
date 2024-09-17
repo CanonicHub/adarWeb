@@ -15,10 +15,16 @@
         <div class="goobercontainer">
             <img class="gooberTitle" src="./assets/gallery.gif" alt="Gallery"/>
             <div class="goobercontent">
-                <img class="vro" src="./assets/car.jpg" width="200" alt="Vro" height="200"> 
+                <div class="carousel">
+                    <button class="arrow left-arrow" onclick="goToLeft()">&#9664;</button>
+                    <div class="carousel-inner">
+                        <img class="vro" src="./assets/car.jpg" width="200" alt="Vro" height="200">
+                        <img class="vro" src="./assets/Goofy_Cat.png" width="200" alt="Vro2" height="200">
+                    </div>
+                    <button class="arrow right-arrow" onclick="goToRight()">&#9654;</button>
+                </div>
             </div>
         </div>
-      
         <div class="infocontainer">
             <img src="./assets/logo.png" alt="vs adar mod" class="infoTitle" width="300"/>
             <p class="subGraph">
@@ -53,5 +59,7 @@
     <footer>
         <p>Site made by Canonic and Shonny</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
