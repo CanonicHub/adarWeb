@@ -1,17 +1,19 @@
 @font-face {
     font-family: 'FNF';
-    src: url('FNF.ttf') format('truetype');
+    src: url('../info/assets/fonts/FNF.ttf') format('truetype');
 }
-
 
 body {
     text-align: center;
     margin: 0;
-    background-color: black; /* Set background to black */
-    color: white; /* Make text white for contrast */
-    background-image: url("../../assets/grid.png"), linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)); /* Add grid image with higher opacity */
-    background-size: 100px 100px, cover; /* Adjust grid size */
-    animation: moveGrid 20s linear infinite; /* Apply slower animation */
+    padding: 0;
+    background-color: black;
+    color: white;
+    background-image: url("../../assets/grid.png"), linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8));
+    background-size: 100px 100px, cover;
+    animation: moveGrid 20s linear infinite;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
 }
 
 @keyframes moveGrid {
@@ -19,7 +21,7 @@ body {
         background-position: 0 0;
     }
     100% {
-        background-position: 100% 100%; /* Move diagonally */
+        background-position: 100% 100%;
     }
 }
 
@@ -27,7 +29,6 @@ h1 {
     color: white;
     font-family: 'FNF';
     margin: 2rem 0;
-
     font-size: 3rem;
     background-color: rgb(0, 0, 0);
     border-radius: 10px;
@@ -36,44 +37,26 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    text-align: center;
 }
 
-
-p2 {
-
+p {
     color: white;
-    margin: 2rem 0;
-
-    font-size: 1.5rem;
-    background-color: rgb(0, 0, 0, 1);
-    border-radius: 10px;
+    margin-bottom: -2rem;
+    font-size: 1.3rem;
     width: auto;
+    text-align: center;
+}
+
+.newstext {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: 70vw;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
-}
-
-p3 {
-    color: white;
-    font-size: 1.2rem;
-    font-family: 'FNF';
-    margin: 1rem 0;
-}
-
-p3 a {
-    color: orange;
-    text-decoration: none;
-}
-
-p3 a:hover {
-    color: white;
-}
-
-p15 {
-
-    color: rgb(229, 255, 0);
-    font-size: 2rem;
-
+    margin: 0 auto;
+    text-align: center;
 }
 
 .stupid {
@@ -114,24 +97,38 @@ a img {
     box-sizing: border-box;
     animation: scrollText 10s linear infinite;
     padding-left: 100%;
-
     color: gray;
     font-size: 2rem;
     font-family: 'FNF';
     margin: 1rem 0;
     width: auto;
-}
-
-.scrolling-text {
-    animation: scrollText 10s linear infinite;
-    padding-left: 100%; /* Start outside the container */
+    text-align: center;
 }
 
 @keyframes scrollText {
     0% {
-        transform: translateX(10%); /* Start position */
+        transform: translateX(10%);
     }
     100% {
-        transform: translateX(-110%); /* End position */
+        transform: translateX(-110%);
     }
+}
+
+.footertext {
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fnfers {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-align: center;
 }
