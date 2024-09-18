@@ -12,11 +12,11 @@ body {
     text-align: center;
     margin: 0;
     padding: 2rem;
-    background-color: black; /* Set background to black */
-    color: white; /* Make text white for contrast */
-    background-image: url("../../assets/grid.png"), linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)); /* Add grid image with higher opacity */
-    background-size: 100px 100px, cover; /* Adjust grid size */
-    animation: moveGrid 20s linear infinite; /* Apply slower animation */
+    background-color: black;
+    color: white;
+    background-image: url("../../assets/grid.png"), linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8));
+    background-size: 100px 100px, cover;
+    animation: moveGrid 2s linear infinite;
 }
 
 @keyframes moveGrid {
@@ -24,7 +24,7 @@ body {
         background-position: 0 0;
     }
     100% {
-        background-position: 100% 100%; /* Move diagonally */
+        background-position: 100px 100px;
     }
 }
 

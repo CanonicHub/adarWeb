@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
 body {
     font-family: Roboto, sans-serif;
     color: #ffffff;
@@ -9,10 +10,9 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background-image: url("./assets/grid.png"); /* Add grid image with higher opacity */
-    background-size: 100px 100px, cover; /* Adjust grid size */
-  
-    animation: moveGrid 20s linear infinite; /* Apply slower animation */
+    background-image: url("./assets/grid.png");
+    background-size: 100px 100px, cover;
+    animation: moveGrid 2s linear infinite;
 }
 
 @keyframes moveGrid {
@@ -20,7 +20,7 @@ body {
         background-position: 0 0;
     }
     100% {
-        background-position: 100% 100%; /* Move diagonally */
+        background-position: 100px 100px;
     }
 }
 
