@@ -103,7 +103,7 @@ a img {
     font-family: 'FNF';
     margin: 1rem 0;
     text-align: center;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
@@ -199,4 +199,11 @@ video {
     .scrolling-text {
         font-size: 1.2rem;
     }
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
