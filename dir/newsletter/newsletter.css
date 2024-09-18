@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'FNF';
+    src: url('FNF.ttf') format('truetype');
+}
+
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: black; /* Set background to black */
+    color: white; /* Make text white for contrast */
+    background-image: url("../../assets/grid.png"), linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)); /* Add grid image with higher opacity */
+    background-size: 100px 100px, cover; /* Adjust grid size */
+    animation: moveGrid 20s linear infinite; /* Apply slower animation */
+}
+
+@keyframes moveGrid {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%; /* Move diagonally */
+    }
+}
+
+h1 {
+    color: white;
+    font-family: 'FNF';
+    margin: 2rem 0;
+
+    font-size: 3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+p2 {
+
+    color: white;
+    margin: 2rem 0;
+
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0, 1);
+    border-radius: 10px;
+    width: auto;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+p3 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'FNF';
+    margin: 1rem 0;
+}
+
+p3 a {
+    color: orange;
+    text-decoration: none;
+}
+
+p3 a:hover {
+    color: white;
+}
+
+p15 {
+
+    color: rgb(229, 255, 0);
+    font-size: 2rem;
+
+}
+
+.stupid {
+    margin-top: 2rem;
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+a img {
+    margin: 1rem 0;
+}
+
+.exit {
+    display: block;
+    margin: 2rem auto;
+}
+
+.adar-day {
+    display: block;
+    margin: 2rem auto;
+}
+
+.adarthing {
+    display: block;
+    margin: 2rem auto;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: scrollText 10s linear infinite;
+    padding-left: 100%;
+
+    color: gray;
+    font-size: 2rem;
+    font-family: 'FNF';
+    margin: 1rem 0;
+    width: auto;
+}
+
+.scrolling-text {
+    animation: scrollText 10s linear infinite;
+    padding-left: 100%; /* Start outside the container */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(10%); /* Start position */
+    }
+    100% {
+        transform: translateX(-110%); /* End position */
+    }
+}
