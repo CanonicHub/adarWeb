@@ -42,7 +42,7 @@ h1 {
 
 p {
     color: white;
-    margin-bottom: -2rem;
+    margin-bottom: 1rem;
     font-size: 1.3rem;
     width: auto;
     text-align: center;
@@ -52,7 +52,7 @@ p {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     width: 70vw;
     align-items: center;
     margin: 0 auto;
@@ -124,6 +124,13 @@ a img {
     display: flex;
     justify-content: center;
     align-items: center;
+  
+}
+
+video {
+     width: 70%;
+    max-width: 70%;
+    height: auto; 
 }
 
 .fnfers {
@@ -131,4 +138,59 @@ a img {
     margin-bottom: 2rem;
     font-weight: bold;
     text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .newstext {
+        width: 80vw;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .scrolling-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .newstext {
+        width: 90vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .scrolling-text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newstext {
+        width: 95vw;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .scrolling-text {
+        font-size: 1.2rem;
+    }
 }
